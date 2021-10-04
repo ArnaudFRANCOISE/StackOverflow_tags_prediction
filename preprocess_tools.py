@@ -23,7 +23,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from nltk.stem.porter import PorterStemmer
 
 
-def remove_tags(body):
+def tags_remover(body):
   """
   body: string
   Retourne le corpus sans les balises: "<p> "<code>"
