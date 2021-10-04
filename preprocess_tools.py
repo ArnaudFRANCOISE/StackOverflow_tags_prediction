@@ -28,6 +28,7 @@ def remove_tags(body):
   body: string
   Retourne le corpus sans les balises: "<p> "<code>"
   """
+  TAG_RE = re.compile(r'<[^>]+>')
   return TAG_RE.sub('', text)
 
 
