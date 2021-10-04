@@ -160,7 +160,7 @@ def preprocess(body_str):
 
     """
 
-    body_wout_tags = remove_tags(body_str)
+    body_wout_tags = tags_remover(body_str)
     wout_ponct = punctuation_remover(body_wout_tags)
     #Remove non-letters
     wout_ponct = re.sub("[^a-zA-Z]", " ", wout_ponct)
