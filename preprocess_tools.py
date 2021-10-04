@@ -28,24 +28,7 @@ def remove_tags(body):
   body: string
   Retourne le corpus sans les balises: "<p> "<code>"
   """
-  listbody = list(body)
-  for char in body:
-    #print(char)
-    
-    #print(char)
-    if char == '<':
-      index_1 = listbody.index(char)
-      
-    if char == '>':
-      index_2 = listbody.index(char)
-      #print(index_1, index_2)
-      for i in range(index_1, index_2+1, 1):
-        listbody[i] = ''
-      index_1, index_2 = 0, 0
-  body_clean = ""
-  for i in listbody:
-    body_clean+=i
-  return body_clean
+  return TAG_RE.sub('', text)
 
 
 #print(string.punctuation)
