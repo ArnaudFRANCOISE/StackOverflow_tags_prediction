@@ -29,7 +29,7 @@ def tags_remover(body):
   Retourne le corpus sans les balises: "<p> "<code>"
   """
   TAG_RE = re.compile(r'<[^>]+>')
-  return TAG_RE.sub('', text)
+  return TAG_RE.sub('', body)
 
 
 #print(string.punctuation)
