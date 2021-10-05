@@ -183,7 +183,6 @@ def td_idf(token_arr):
 
   tfidf_transformer = TfidfVectorizer(ngram_range = (1,3),
                     sublinear_tf = True,
-                    max_features = 40000,
                     min_df =10)
 
   tfidf_transformer.fit_transform(token_arr )
