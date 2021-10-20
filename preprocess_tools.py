@@ -174,7 +174,7 @@ def preprocess(body_str):
     
     return newbody
 
-def td_idf(token_arr):
+def td_idf(token_arr, max_features):
   """
   Convert token into TD_IDF vector
   """
@@ -183,6 +183,7 @@ def td_idf(token_arr):
 
   tfidf_transformer = TfidfVectorizer(ngram_range = (1,3),
                     sublinear_tf = True,
+                    max_features = max_features,
                     min_df =10)
 
   tfidf_transformer.fit_transform(token_arr )
