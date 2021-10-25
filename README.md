@@ -4,9 +4,9 @@ During our last year as engineering student in artificial intelligence, we have 
 In order to study stackoverflow question and to predict tags we will be using Random Forest and RNN.
 
 
-# Files
+# Dataset
 
-All csv files has been downloaded thanks to SQL request on the StackOverflow database.
+All csv files has been downloaded thanks to SQL request on the StackOverflow database. (https://data.stackexchange.com/stackoverflow/query/new)
 They has been stored inside the `/QueryResults` directory.
 We aimed to classify **26 stackoverflow most popular tags.** We extracted about **10.000 corpus per tags.**
 *(Unfortunately we had to really shortened our dataset due to limited computation power)*
