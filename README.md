@@ -1,2 +1,3 @@
 # StackOverflow_tags_prediction
-Studying stackoverflow question and try to predict tags using Random Forest and RNN
+During our last year as engineering student in artificial intelligence, we have been asked to develop a natural language processing solution to predict stackoverflow tags.
+In order to study stackoverflow question and  to predict tags we will be using Random Forest and RNN
