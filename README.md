@@ -14,11 +14,11 @@ We aimed to classify **26 stackoverflow most popular tags.** We extracted about 
 
 A sum up of the preprocessing done is in the `data_analysis.ipynb` notebook.
 For both model we had to clean the corpus:
-	- Removing html balise
-	- Removing stopword
-	- Tokenization
-	- Lemmatisation
-	- Stemming
+</br>	- Removing html balise
+</br>	- Removing stopword
+</br>	- Tokenization
+</br>	- Lemmatisation
+</br>	- Stemming
 This has been applied to the whole corpus inside the `Top10_data_preparation`
 # Random Forest
 For the random forest once the corpus was cleaned we compute the tf-idf for each word. `RandomForest_tf-idf.ipynb`
