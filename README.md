@@ -41,18 +41,5 @@ Here is a simple analysis of our prediction.
 ![alt text](https://github.com/ArnaudFRANCOISE/StackOverflow_tags_prediction/blob/fea39a8f4c38a7e9539591b9d3c7a66f1c254376/RNN_model/Accuracy.png?raw=true)
 The model prediction are quite difficult to clean as we have sometimes low probalities for each class.
 
-    array([[0.50160116, 0.04523362, 0.0265328 , ..., 0.02360279, 0.00452808,
-        0.02240554],
-       [0.10306573, 0.24288872, 0.01265746, ..., 0.00849207, 0.08007599,
-        0.03257773],
-       [0.00874289, 0.02098964, 0.00135328, ..., 0.03234525, 0.02181898,
-        0.01449805],
-       ...,
-       [0.01351722, 0.08484412, 0.00760453, ..., 0.01077135, 0.03770273,
-        0.8511029 ],
-       [0.01091659, 0.0326408 , 0.00486266, ..., 0.03158519, 0.05359608,
-        0.01755047],
-       [0.0101714 , 0.00773121, 0.00615104, ..., 0.08850229, 0.0353671 ,
-        0.00311306]], dtype=float32)
 
 After cleaning we reached a real **84% mean accuracy**.
