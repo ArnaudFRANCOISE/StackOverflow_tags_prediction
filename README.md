@@ -37,7 +37,8 @@ Once the RNN trained, we reached a **0.89 validation accuracy rate** which is qu
 ## Predictions
 
 Here is a simple analysis of our prediction. 
-(link to the Googlephotos)
+
+![alt text](https://github.com/ArnaudFRANCOISE/StackOverflow_tags_prediction/blob/fea39a8f4c38a7e9539591b9d3c7a66f1c254376/RNN_model/Accuracy.png?raw=true)
 The model prediction are quite difficult to clean as we have sometimes low probalities for each class.
 
     array([[0.50160116, 0.04523362, 0.0265328 , ..., 0.02360279, 0.00452808,
