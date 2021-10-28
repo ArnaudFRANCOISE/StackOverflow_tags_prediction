@@ -65,4 +65,4 @@ Then with all modules installed, you can juste execute:
 
     #StackOverflow_tags_prediction/MyFlaskWebsite/MyFlaskWebsite
     main.py
-[![Watch the video]https://github.com/ArnaudFRANCOISE/StackOverflow_tags_prediction/blob/03fad596aa30b3ea251ab0189c542cfa7edc30ab/Demo_projet_sotags.mp4
+[![Watch the video]https://github.com/ArnaudFRANCOISE/StackOverflow_tags_prediction/blob/03fad596aa30b3ea251ab0189c542cfa7edc30ab/Demo_projet_sotags.mp4]
