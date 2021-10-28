@@ -32,7 +32,17 @@ We considered the TOP 10 stackoverflow tags:
 
     target_interest  = ["<c#>", "<c++>", "<java>", "<javascript>", "<html>","<css>","<android>",
                         "<python>", "<r>", "<sql>"]
-Once the RNN trained, we reached a **0.89 validation accuracy rate** which is quite good considering the small dataset.
+                      
+The preparation of the RNN model follow this notebook execution order:
+
+PART_I_TOP10_data_contraction.ipynb
+PART_II_TOP10_StackOverflow_LSTM_corpus_contraction.ipynb
+PART_III_TOP10_RNN_model_v1.ipynb
+
+*(The preparation has been splitted because we first worked on google colab and experienced some RAM issues. The last notebooks (training of the RNN) has been mad locally thanks to Cuda and tensorflow-gpu installation in my python environment)*
+    
+
+Once the RNN trained, we reached a **0.84 validation accuracy rate** which is quite good considering the small dataset.
 
 ## Predictions
 
@@ -43,3 +53,16 @@ The model prediction are quite difficult to clean as we have sometimes low proba
 
 
 After cleaning we reached a real **84% mean accuracy**.
+
+# Website API
+We also made an simple website with the **Flask** framework with python.
+before running it make sure to run :
+
+    #StackOverflow_tags_prediction/MyFlaskWebsite/MyFlaskWebsite
+    pip install -r requirements.txt
+
+Then with all modules installed, you can juste execute:
+
+    #StackOverflow_tags_prediction/MyFlaskWebsite/MyFlaskWebsite
+    main.py
+
