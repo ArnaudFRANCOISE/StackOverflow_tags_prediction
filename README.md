@@ -25,7 +25,7 @@ For the random forest once the corpus was cleaned we compute the tf-idf for each
 We have only reached a **40% accuracy rate** we did not keep this pipeline.
 *However with a biggest dataset we may reach about **80% accuracy rate***
 # RNN
-
+`/RNN_model`
 For the RNN pipeline we used the `keras.tonkenize.word_to_sequence` method to vectorize all word inside the corpus.
 However we realised that the RNN training was really time consuming so we decided to only take 4000 features and 100 corpus per tags. 
 We considered the TOP 10 stackoverflow tags:
