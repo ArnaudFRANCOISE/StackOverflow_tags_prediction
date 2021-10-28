@@ -1,0 +1,25 @@
+div {
+
+
+    display: flex;
+    
+    
+    justify-content: center;
+    
+    
+    }
+    
+    
+     
+    .exemple_un {
+        background-color: "#ffeed4";
+        color: white;
+    }
+    
+    img {
+    
+    
+    width: 200px;
+    
+    
+    }
