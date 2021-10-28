@@ -1,0 +1,13 @@
+Id,Body,Title,Tags,CreationDate
+"3370320","<p>I've got the following:</p>
+
+<p><a href=""http://pastie.org/1066861"" rel=""nofollow noreferrer"">http://pastie.org/1066861</a></p>
+
+<p>I've got a Javascript function, that tells me to delete a given node from the parent, let's assume position 1 ( from 0 or 1, since we've got two child nodes on parent ), When doing $parent->getElementsByTagName and trying to remove the the $child->item( 1 ), I notice that PHP GetElementsByTagName is giving me a diferent position, for that specific node. So, there's no way to access the right node, that JS told.</p>
+
+<p>I guess I should stay away of getElementsByTagName, and use getElementsById, but right now I would like to learn and understand why this doesnt work properly.</p>
+
+<p>Here's some code: <a href=""http://pastie.org/1066857"" rel=""nofollow noreferrer"">http://pastie.org/1066857</a></p>
+
+<p>Thanks a lot for your atention ;D</p>
+","PHP DOMDocument: How to get direct node childrens","<php><dom>","2010-07-30 09:43:36"
