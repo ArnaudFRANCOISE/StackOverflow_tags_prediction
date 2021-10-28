@@ -33,8 +33,10 @@ We considered the TOP 10 stackoverflow tags:
     target_interest  = ["<c#>", "<c++>", "<java>", "<javascript>", "<html>","<css>","<android>",
                         "<python>", "<r>", "<sql>"]
                       
+
 The preparation of the RNN model follow this notebook execution order:
 
+/RNN_model
 PART_I_TOP10_data_contraction.ipynb
 PART_II_TOP10_StackOverflow_LSTM_corpus_contraction.ipynb
 PART_III_TOP10_RNN_model_v1.ipynb
