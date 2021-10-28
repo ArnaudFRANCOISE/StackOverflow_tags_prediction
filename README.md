@@ -36,10 +36,12 @@ We considered the TOP 10 stackoverflow tags:
 
 The preparation of the RNN model follow this notebook execution order:
 
-<
-PART_I_TOP10_data_contraction.ipynb
-PART_II_TOP10_StackOverflow_LSTM_corpus_contraction.ipynb
-PART_III_TOP10_RNN_model_v1.ipynb>
+
+                        PART_I_TOP10_data_contraction.ipynb
+                        PART_II_TOP10_StackOverflow_LSTM_corpus_contraction.ipynb
+                        PART_III_TOP10_RNN_model_v1.ipynb
+
+
 
 *(The preparation has been splitted because we first worked on google colab and experienced some RAM issues. The last notebooks (training of the RNN) has been mad locally thanks to Cuda and tensorflow-gpu installation in my python environment)*
     
