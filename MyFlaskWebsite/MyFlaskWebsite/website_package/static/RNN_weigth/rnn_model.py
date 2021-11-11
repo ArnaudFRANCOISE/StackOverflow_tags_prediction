@@ -19,7 +19,7 @@ def pipeline(data, path_to_model):
     
     #text to sequence
     print("...preprocessed")
-    path_to_tokenizer = "./MyFlaskWebsite/website_package/static/RNN_weigth/top11_tokenizer.pickle"
+    path_to_tokenizer = "./website_package/static/RNN_weigth/top11_tokenizer.pickle"
     pickle_in = open(path_to_tokenizer,"rb")
     tokenizer = pickle.load(pickle_in)
     print("...word to sequence")

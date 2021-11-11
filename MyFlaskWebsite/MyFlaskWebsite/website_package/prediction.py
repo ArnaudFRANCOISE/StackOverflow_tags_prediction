@@ -44,9 +44,9 @@ def upload_file():
 
 
             #----------------------- PREDICTION---------------------
-            data = model.pipeline(data, "./MyFlaskWebsite/website_package/static/RNN_weigth/RNN_V2_RNN_V2_14")
+            data = model.pipeline(data, "./website_package/static/RNN_weigth/RNN_V2_RNN_V2_14")
             #-------------------------------------------------------
-            path = "MyFlaskWebsite/website_package/uploadfile/data.csv"
+            path = "./website_package/uploadfile/data.csv"
             data.to_csv(path)
             
             #uploads = os.path.join(current_app.root_path, app.config['UPLOAD_FOLDER'])
