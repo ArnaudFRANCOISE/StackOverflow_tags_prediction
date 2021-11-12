@@ -1,0 +1,76 @@
+,Id,Body,Title,Tags,CreationDate
+0,36920138,"<p>i have the following Json Response as :</p>
+
+<p>{""StatusCode"":2,""Error_fields"":[{""user"":""XXX""},{""password"":""YYY""}]}, and i have to parse that response using Gson, so i have built the ResponseBase class as following :</p>
+
+<p>BaseResponse.java</p>
+
+<pre><code>    @SerializedName(""StatusCode"")
+    private int StatusCode;
+
+    @SerializedName(""Error_fields"")
+    List&lt;ErrorField&gt; Erro;
+
+    public void setStatusCode(int statusCode){
+        this.StatusCode=statusCode;
+    }
+
+    public int getStatusCode(){
+        return this.StatusCode;
+    }
+
+    public List &lt;ErrorField&gt; getErro() {
+        return Erro;
+    }
+
+    public void setErro(List &lt;ErrorField&gt; erro) {
+        Erro = erro;
+    }
+</code></pre>
+
+<p>and Also i have added the Error Fields as :
+ErrorField.java</p>
+
+<pre><code>public class ErrorField {
+
+    String ErrorTitle;
+
+    String ErrorMessage;
+
+    public String getErrorTitle() {
+        return ErrorTitle;
+    }
+
+    public void setErrorTitle(String errorTitle) {
+        ErrorTitle = errorTitle;
+    }
+
+    public String getErrorMessage() {
+        return ErrorMessage;
+    }
+
+    public void setErrorMessage(String errorMessage) {
+        ErrorMessage = errorMessage;
+    }
+}
+</code></pre>
+
+<p>so in order , to receive the json array correctly , i have to add annotation to ErrorTitle to be :</p>
+
+<pre><code>@SerializedName(""password"")
+    String ErrorTitle;
+</code></pre>
+
+<p>so in case of i don't know the returned json object key's it will fail , and it's not a good solution to add all the suggested annotation to expect is it existed or not , also i have tried to make that <code>List&lt;ErrorField&gt;</code> as <code>List&lt;JsonObject&gt;</code> and the same results it returns empty value , but it counts ""2"" as the Array size !? </p>
+",json Array Parsing using Gson,<android><json><parsing><gson>,2016-04-28 16:14:00
+1,11237936,"<p>I've seen/heard all about disabling text selection with the variations of <code>user-select</code>, but none of those are working for the problem I'm having. On Android (and I presume on iPhone), if you tap-and-hold on text, it highlights it and brings up little flags to drag and select text. I need to disable those (see image):</p>
+
+<p><img src=""https://i.stack.imgur.com/JhSpq.png"" alt=""screenshot""></p>
+
+<p>I've tried <code>-webkit-touch-callout</code> to no avail, and even tried things like <code>$('body').on('select',function(e){e.preventDefault();return;});</code> to no avail. And the cheap tricks like <code>::selection:rgba(0,0,0,0);</code> won't work either, as hiding these won't help - selection still happens and it disrupts the UI. Plus I'm guessing those flags would still be there.</p>
+
+<p>Any thoughts would be great. Thanks!</p>
+",Mobile Web - Disable long-touch/taphold text selection,<android><iphone><css><mobile><highlight>,2012-06-28 04:07:11
+2,51964390,"<p>I want to get the camerazoomlevel in googlemaps, so that I can resize my markers depending on the zoomlevel. I know that I can set the zoomlevel as in 
+<code>mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(Berlin, zoomLevel))</code> but is there any way to get a feedback from googlemaps or make googlemaps change the iconsize automatically?</p>
+",Get camera zoomlevel from googlemaps in Kotlin,<android><google-maps><kotlin>,2018-08-22 10:01:53

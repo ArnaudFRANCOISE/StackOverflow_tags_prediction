@@ -24,7 +24,7 @@ def pipeline(data, path_to_model):
     tokenizer = pickle.load(pickle_in)
     print("...word to sequence")
     X_unknown = tokenizer.texts_to_sequences(data["Body"])
-    X_unknown = keras.preprocessing.sequence.pad_sequences(X_unknown)
+    X_unknown = keras.preprocessing.sequence.pad_sequences(X_unknown, maxlen=1270)
     
     
     #path_to_model = "./SavedModel/RNN_V2_nb_epochs_30/"
